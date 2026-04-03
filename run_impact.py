@@ -3,12 +3,12 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import pandas as pd
-from execution.data.mock_data import generate_intraday_data
-from execution.core.order import Order
-from execution.strategies.twap import TWAPStrategy
-from execution.strategies.vwap import VWAPStrategy
-from execution.backtest.engine import BacktestEngine
-from execution.metrics.costs import calculate_implementation_shortfall
+from data.mock_data import generate_intraday_data
+from core.order import Order
+from strategies.twap import TWAPStrategy
+from strategies.vwap import VWAPStrategy
+from backtest.engine import BacktestEngine
+from metrics.costs import calculate_implementation_shortfall
 
 def main():
     print("Generating mock intraday data...")

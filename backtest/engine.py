@@ -1,8 +1,8 @@
 import pandas as pd
 from typing import List
-from execution.core.order import Order, Fill
-from execution.strategies.base import BaseStrategy
-from execution.metrics.costs import calculate_market_impact
+from core.order import Order, Fill
+from strategies.base import BaseStrategy
+from metrics.costs import calculate_market_impact
 
 class BacktestEngine:
     def __init__(self, data: pd.DataFrame):

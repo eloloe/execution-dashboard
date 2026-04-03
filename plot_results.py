@@ -7,13 +7,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from execution.data.mock_data import generate_intraday_data
-from execution.simulate_random_orders import generate_random_orders
-from execution.core.order import Order
-from execution.strategies.twap import TWAPStrategy
-from execution.strategies.vwap import VWAPStrategy
-from execution.backtest.engine import BacktestEngine
-from execution.metrics.costs import calculate_implementation_shortfall, calculate_interval_vwap_slippage
+from data.mock_data import generate_intraday_data
+from simulate_random_orders import generate_random_orders
+from core.order import Order
+from strategies.twap import TWAPStrategy
+from strategies.vwap import VWAPStrategy
+from backtest.engine import BacktestEngine
+from metrics.costs import calculate_implementation_shortfall, calculate_interval_vwap_slippage
 
 def run_simulation_and_plot(num_orders=100):
     print("Generating simulated trade sequence...")

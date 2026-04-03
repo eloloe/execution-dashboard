@@ -1,7 +1,7 @@
 import pandas as pd
 from typing import List
-from execution.strategies.base import BaseStrategy
-from execution.core.order import Order
+from strategies.base import BaseStrategy
+from core.order import Order
 
 class TWAPStrategy(BaseStrategy):
     def __init__(self, parent_order: Order, start_time: pd.Timestamp, end_time: pd.Timestamp, interval_minutes: int = 1):

@@ -6,12 +6,12 @@ import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from execution.data.mock_data import generate_intraday_data
-from execution.core.order import Order
-from execution.strategies.twap import TWAPStrategy
-from execution.strategies.vwap import VWAPStrategy
-from execution.backtest.engine import BacktestEngine
-from execution.metrics.costs import calculate_implementation_shortfall, calculate_interval_vwap_slippage
+from data.mock_data import generate_intraday_data
+from core.order import Order
+from strategies.twap import TWAPStrategy
+from strategies.vwap import VWAPStrategy
+from backtest.engine import BacktestEngine
+from metrics.costs import calculate_implementation_shortfall, calculate_interval_vwap_slippage
 
 def generate_random_orders(num_orders, df, start_time, base_price):
     """Randomly generate orders with varying sizes and directions."""

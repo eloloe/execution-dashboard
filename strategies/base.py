@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Optional
 import pandas as pd
-from execution.core.order import Order
+from core.order import Order
 
 class BaseStrategy(ABC):
     def __init__(self, parent_order: Order, start_time: pd.Timestamp, end_time: pd.Timestamp):

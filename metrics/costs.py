@@ -1,5 +1,5 @@
 import pandas as pd
-from execution.core.order import Order
+from core.order import Order
 
 def calculate_implementation_shortfall(order: Order) -> float:
     """
