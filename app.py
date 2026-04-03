@@ -7,13 +7,13 @@ import seaborn as sns
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from execution.data.mock_data import generate_intraday_data
-from execution.core.order import Order
-from execution.strategies.twap import TWAPStrategy
-from execution.strategies.vwap import VWAPStrategy
-from execution.backtest.engine import BacktestEngine
-from execution.metrics.costs import calculate_implementation_shortfall, calculate_interval_vwap_slippage
-from execution.simulate_random_orders import generate_random_orders
+from data.mock_data import generate_intraday_data
+from core.order import Order
+from strategies.twap import TWAPStrategy
+from strategies.vwap import VWAPStrategy
+from backtest.engine import BacktestEngine
+from metrics.costs import calculate_implementation_shortfall, calculate_interval_vwap_slippage
+from simulate_random_orders import generate_random_orders
 
 # 針對 Mac 設定 Matplotlib 中文字體顯示
 plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
